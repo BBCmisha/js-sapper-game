@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="canvas-info">
+            <p>Mines: <span class="mines-count">45</span></p>
+            <p>Time: <span class="time-count">0</span> sec</p>
+        </div>
+        <canvas id="canvas"></canvas>
+
+        <div class="popup popup-start">
+            <!-- <p class="popup-text">Let`s play!</p> -->
+            <div class="popup-button popup-button_start">Start</div>
+            <span class="popup-settings">Settings</span>
+        </div>
+
+        <div class="popup popup-lose">
+            <p class="popup-text">Loser! Try again!</p>
+            <div class="popup-button popup-button_restart">Restart</div>
+            <span class="popup-settings">Settings</span>
+        </div>
+
+        <div class="popup popup-success">
+            <p class="popup-text">Victory! You are awesome!</p>
+            <div class="popup-button popup-button_restart">Restart</div>
+            <span class="popup-settings">Settings</span>
+        </div>
+
+        <div class="settings">
+            <span class="settings__title">Размер поля:</span>
+            <div class="settings__row">
+                <input class="settings__input settings__input_width" type="text" value="18">
+                <span>X</span>
+                <input class="settings__input settings__input_height" type="text" value="18">
+            </div>
+            <span class="settings__title">Количество мин:</span>
+            <input class="settings__input settings__input_mines" type="text" value="45">
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
